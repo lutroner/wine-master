@@ -9,9 +9,7 @@ env = Environment(
 )
 
 template = env.get_template('template.html')
-wine_data = read_excel('wine.xlsx', sheet_name='Лист1',
-                       usecols=['Картинка', 'Категория', 'Название',
-                                'Сорт', 'Цена', 'Акция'])
+wine_data = read_excel('wine.xlsx', sheet_name='Лист1')
 open_date = datetime(year=1920, month=1, day=1)
 wine_dict = wine_data.to_dict(orient='records')
 category_list = list(dict.fromkeys(wine_data['Категория'].to_list()))

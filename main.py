@@ -9,7 +9,7 @@ env = Environment(
 )
 
 template = env.get_template('template.html')
-wine_data = read_excel('wine3.xlsx', sheet_name='Лист1',
+wine_data = read_excel('wine.xlsx', sheet_name='Лист1',
                        usecols=['Картинка', 'Категория', 'Название',
                                 'Сорт', 'Цена', 'Акция'])
 open_date = datetime(year=1920, month=1, day=1)

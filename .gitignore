@@ -6,7 +6,7 @@ __pycache__/
 .~lock.wine3.xlsx#
 # C extensions
 *.so
-
+index.html
 # Distribution / packaging
 .Python
 build/
